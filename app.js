@@ -1,4 +1,3 @@
-
 let numeroSecreto= 0;
 let intentos= 0;
 let listaNumerosSorteados =[];
@@ -67,6 +66,8 @@ function generarNumeroSecreto() {
 
     }
 
+}
+
 
 
 function condicionesIniciales(){
@@ -88,3 +89,4 @@ function reiniciarJuego(){
 }
 
 condicionesIniciales();
+
