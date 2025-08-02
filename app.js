@@ -1,12 +1,4 @@
-//Ctrl + F Buscar en el codigo
-//let titulo = document.querySelector('h1');
-//titulo.innerHTML = 'Juego del número secreto';
 
-//let parrafo = document.querySelector('p');
-//parrafo.innerHTML = 'Indica un número del 1 al 10';
-
-//let numeroSecreto= generarNumeroSecreto();
-//let intentos= 1;
 let numeroSecreto= 0;
 let intentos= 0;
 let listaNumerosSorteados =[];
@@ -32,7 +24,6 @@ function verificarIntento() {
         asignarTextoElemento('p',`Acertaste el número en ${intentos} ${ (intentos==1) ? 'vez' : 'veces'}`);
         document.getElementById('reiniciar').removeAttribute('disabled');
 
-
     } else {
         //El usuario no acerto
 
@@ -43,8 +34,6 @@ function verificarIntento() {
         }
         intentos ++;
         limpiarCaja();
-
-
     }
     return;
 
@@ -76,10 +65,8 @@ function generarNumeroSecreto() {
         return numeroGenerado;
     }
 
-    //console,log(`Número Generado: $ {numeroGenerado}`)
     }
 
-}
 
 
 function condicionesIniciales(){
@@ -87,8 +74,6 @@ function condicionesIniciales(){
     asignarTextoElemento('p',`Indica un número de 1 a ${numeroMaximo}`);
     numeroSecreto= generarNumeroSecreto();
     intentos=1;
-
-
 }
 
 function reiniciarJuego(){
@@ -103,11 +88,3 @@ function reiniciarJuego(){
 }
 
 condicionesIniciales();
-
-  //let numeroDeUsuario = document.querySelector('input');
-    //alert('Click desde el botón');
-    //console.log(typeof(numeroDeUsuario));
-    //console.log(typeof(numeroSecreto));
-    //console.log(numeroSecreto);
-    //console.log(numeroDeUsuario);
-    //console.log(numeroDeUsuario===numeroSecreto);
